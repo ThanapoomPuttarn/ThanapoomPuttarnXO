@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Ga+Maamli&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(60deg, #00d2ff 0%, #3a47d5 100%);
+    font-family: "Raleway", sans-serif;
+
+
+   
+}
+
+#container {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#playgrid {
+    width: 380px;
+    height: 380px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 120px;
+    height: 120px;
+    background: white;
+    border-radius: 10px;
+    margin: 1px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.mark_x::before {
+    content: "X";
+    font-size: 100px;
+    font-weight: 800;
+    width: 100%;
+    color: red;
+    cursor: no-drop;
+}
+
+.mark_o::before {
+    content: "O";
+    font-size: 100px;
+    font-weight: 800;
+    width: 100%;
+    color: rgb(125, 6, 161);
+    cursor: no-drop;
+
+}
+
+#container #btnrest {
+    margin-top: 20px;
+    justify-items: center;
+}
+
+#btnrest {
+    background-color: bisque;
+    padding: 10px;
+    border: none;
+    border-radius:  10px;
+    cursor: pointer;
+}
+
+#info {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 10px;
+}
